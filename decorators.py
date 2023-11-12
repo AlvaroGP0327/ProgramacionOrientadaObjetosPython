@@ -1,3 +1,6 @@
+#Estudio desde el video ClearCode
+#Understanding decorators
+
 '''En general los decoradores son funciones
 que envuelven a otras funciones'''
 '''Se usan principalmente en tres
@@ -26,6 +29,22 @@ def function_generator():
 
     return new_function
 
-new_function = function_generator()
-print(type(new_function))
-new_function()
+'''implementando decoradores'''
+'''
+1- Se escribe la funcionalidad del decorador (wrapper)
+2- Se llama el wrapper utilizando @
+3- Dentro del decorador @ escribir la logica de la funcion '''
+def decorator(func):
+    print('decorator logic start')
+    func()
+    print('decorator logic ends')
+
+@decorator
+def func2():
+    print('Function by decorator was implemented')
+
+#new_function = function_generator()
+#print(type(new_function))
+#new_function()
+
+
