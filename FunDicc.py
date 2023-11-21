@@ -1,4 +1,5 @@
-#  LLAMADO A UNA FUNCION DESDE UN DICCIONARIO
+# Script para representar el procedimiento
+# para llamar funciones mediante un diccionario
 
 def menu_selector():
     opciones = {'1':dias,'2':tardes,'3':noches, '4':salir}
