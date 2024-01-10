@@ -21,6 +21,7 @@ class Pintar():
         #Es una funcion que depende siempre de la clase, no se implementa en las instancias
         # No tiene acceso a los atributos ni de la clase ni de la instancia
         #Se llama desde la clase
+        #Se usa cuando quiero usar un metodo sin necesidad de instanciar un objeto
         print('Este es un metodo estatico...')
 
     def metodo_instancia(self):

@@ -1,4 +1,11 @@
 #Acceder a los atributos via property
+'''Las propiedades en python son objetos
+que actuan sobre los atributos de una clase
+permitiendo controlar su acceso implementando
+metodos asociados al atributo.
+cuando uso el decorador @property antes de un
+metodo este se convierte en una propiedad.
+'''
 
 class Student:
     def __init__(self,name,code,note):
