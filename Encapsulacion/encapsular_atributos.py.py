@@ -7,6 +7,11 @@ from abc import ABC, abstractmethod, abstractproperty
 
 class Persona(ABC):
 
+    #Indica a las clases hijas que tienen
+    #que tener SI O SI los atributos que encierran 
+    #decorador @abstractproperty.
+    #En clases hijas se deben implementar los atributos
+    #encapsulados via propiedades(@property).
     @abstractproperty
     def ciudad():
         pass
@@ -26,7 +31,7 @@ class Payaso(Persona):
 
     def __init__(self) -> None:
         super().__init__()    
-        self._city = None
+        self._ciudad = None
         self._numero_id = 0
     
     @property
@@ -46,12 +51,13 @@ class Payaso(Persona):
 #El metodo abstracto ciudad sera el mediador para el atributo city    
     @property
     def ciudad(self):
-        return self._city
+        print('retornando ciudad')
+        return self._ciudad
     
     @ciudad.setter
     def ciudad(self,cd):
         print("asignando ciudad")
-        self._city = cd
+        self._ciudad = cd
 
 payaso = Payaso()
 payaso.ciudad = "Boston"

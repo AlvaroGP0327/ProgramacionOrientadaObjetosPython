@@ -11,7 +11,7 @@ class Auto():
     def frenar(cls,menosvelocidad):
         #No espera una instancia para implementarse
         print('disminuyendo la velocidad') 
-
+        
 auto = Auto('Nissan350z', 2018)
 auto.acelerar(500)
 #Llamado a un metodo de clase desde la instancia

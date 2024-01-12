@@ -15,6 +15,9 @@ class Pintar():
         #instancias
         #Se llama desde la clase
         #No puede acceder a los atributos de instancia
+        #Para acceder a los atributos de la instancia
+        #se le debe pasar al metodo de clase la instancia
+        #como parametro
         print('Este es un metodo de clase...')
         print('Desde aqui modificar la superficie') 
    
@@ -62,7 +65,9 @@ print(figura1.color)
 print(figura2.color)
 print(figura2.forma)
 print(Pintar.metodo_estatico())
-
+figura3.forma = 'Paralelepipedo'
+print(figura3.forma)
+print(figura1.forma)
 
 
 

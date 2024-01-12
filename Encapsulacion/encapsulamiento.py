@@ -1,6 +1,12 @@
 #Encapsular los atributos privados (__atributo) usando metodos para acceder a ellos
 #Privacidad del atributo consiste en si accedido o no desde fuera de la clase
-#Encapsulamiento sin el uso de decoradores
+#Encapsulamiento sin el uso de decoradores.
+#__atributo el guion bajo que se pone antes de la definicion
+#del nombre del atributo es una CONVENCION en lugar de una implementacion
+#como en otros lenguajes. La CONVENCION le indica al desarrollador que NO
+#debe acceder al atributo directamente, en su lugar debe acceder al atributo
+#via sus metodos.
+
 class User():
 
     def __init__(self, nombre, apellido, correo, contrasena, telefono) -> None:
@@ -10,15 +16,15 @@ class User():
         self.correo= correo
         self.contrasena = contrasena
         #Atributos privados
-        self.__telefono = telefono
+        self._telefono = telefono
 
     def get_telefono(self):
         #permite implementar una logica extra antes de leer un atributo
-        return self.__telefono
+        return self._telefono
 
     def set_telefono(self, nuevo_telefono):
         #permite implementar una logixa extra antes de escribir sobre un atributo
-        self.__telefono = nuevo_telefono  
+        self._telefono = nuevo_telefono  
     
     def encriptar_contrasena(self, contrasena):
         pass
@@ -31,9 +37,7 @@ usuario1 = User(nombre="Miryam", apellido="Pretel", correo="samiza16@gmail.com",
 
 
 print(usuario1.nombre)
-#print(usuario1.__telefono) #No es posible acceder a un atributo privado de esta forma
 print(usuario1.get_telefono())
-#usuario1.__telefono = "00000000" #No es posible de esta forma modificar el atributo
 usuario1.set_telefono(+573166684233) #Intermediario el metodo set_() si se puede cambiar el atributo
 print(usuario1.get_telefono())
 
