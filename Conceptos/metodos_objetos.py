@@ -7,12 +7,15 @@ class Auto():
     def acelerar(self, masvelocidad):
         self.velocidad = masvelocidad
 
-    def frenar(menosvelocidad):
+    @classmethod
+    def frenar(cls,menosvelocidad):
         #No espera una instancia para implementarse
         print('disminuyendo la velocidad') 
 
 auto = Auto('Nissan350z', 2018)
 auto.acelerar(500)
-#auto.frenar(100) No es correcto llamar a una funcion de una clase desde la instancia
-Auto.frenar(100) #Llamado a una funcion de clase/ no requiere de instancia
+#Llamado a un metodo de clase desde la instancia
+auto.frenar(100) 
+Auto.frenar(100) 
+#Llamado a una funcion de clase/ no requiere de instancia
         
