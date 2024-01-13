@@ -2,6 +2,7 @@
  @staticmethod @classmethod'''
 
 class Pintar():
+    #Atributos de instancia
     def __init__(self, color) -> None:
         self.color = color
 #Atributo de clase

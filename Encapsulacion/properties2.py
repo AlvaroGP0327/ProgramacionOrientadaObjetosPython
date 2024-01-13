@@ -20,7 +20,7 @@ class User():
 
     #Encapsulando el atributo correo
     @property
-    #Setter
+    #Getter
     def correo(self):
         return self._correo
     @correo.setter

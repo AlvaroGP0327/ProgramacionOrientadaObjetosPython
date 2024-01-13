@@ -1,18 +1,22 @@
 #Cree una clase Figura con los atributos x, y height,widht
 # Ver el archivo de Herencia.py donde esta mejor implementado el ejemplo
 class Shape():
-    def __init__(self, x, y, height, width) -> None:
+    def __init__(self, x, y, heigth, width) -> None:
         self.x = x
         self.y = y
-        self.height = height
-        self.x = width
+        self.heigth = heigth
+        self.width = width
 
     def draw(self):
-        pass
+        print('hola desde shape')
 
 class Circle(Shape):
-    def __init__(self, x, y, radius) -> None:
+    def __init__(self,height,width, x, y, radius) -> None:
         self.radius = radius
-        super().__init__(x, y,)
+        super().__init__(x,y,height,width)
 
-        
+    def draw(self):
+        return "Reescribir el metodo draw"
+
+circle = Circle(2,2,3,3,5)
+

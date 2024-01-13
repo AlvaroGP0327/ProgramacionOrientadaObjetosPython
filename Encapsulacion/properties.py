@@ -4,7 +4,7 @@
 class Productos:
     def __init__(self, nombre, precio):
         self.nombre = nombre
-        self._precio = precio # Atributo encapsulado
+        self._precio = precio # Atributo privado
 
     @property
     #Getter

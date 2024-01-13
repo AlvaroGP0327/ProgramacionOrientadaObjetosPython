@@ -1,7 +1,7 @@
-#Encapsular los atributos privados (__atributo) usando metodos para acceder a ellos
+#Encapsular los atributos privados (_atributo) usando metodos para acceder a ellos
 #Privacidad del atributo consiste en si accedido o no desde fuera de la clase
 #Encapsulamiento sin el uso de decoradores.
-#__atributo el guion bajo que se pone antes de la definicion
+#_atributo el guion bajo que se pone antes de la definicion
 #del nombre del atributo es una CONVENCION en lugar de una implementacion
 #como en otros lenguajes. La CONVENCION le indica al desarrollador que NO
 #debe acceder al atributo directamente, en su lugar debe acceder al atributo
@@ -23,7 +23,7 @@ class User():
         return self._telefono
 
     def set_telefono(self, nuevo_telefono):
-        #permite implementar una logixa extra antes de escribir sobre un atributo
+        #permite implementar una logica extra antes de escribir sobre un atributo
         self._telefono = nuevo_telefono  
     
     def encriptar_contrasena(self, contrasena):

@@ -1,4 +1,4 @@
-'''Definicin de una clase base abstracta
+'''Definicion de una clase base abstracta
 Se usa para heredar metodos que deben ser
 implementados por las clases hijas.
 No se pueden instanciar directamemte

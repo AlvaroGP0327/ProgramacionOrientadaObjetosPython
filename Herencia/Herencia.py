@@ -12,7 +12,7 @@ class Vehicle(ABC):
 
 # Clase hija
 class Car(Vehicle):
-    def __init__(self, brand, year, wheels):
+    def __init__(self,brand,year,wheels):
         self.wheels = wheels
         super().__init__(brand, year) 
 

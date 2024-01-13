@@ -1,8 +1,14 @@
 '''No es tan estricta como en Java
 pero puede implementarse por medio
-de una clase base abstracta y al herencia
+de una clase base abstracta y la herencia
 Otra aproximacion es usando la anotacion
 Protocol para versiones python 3.8+'''
+#Interface: Conjunto de metodos que una
+#clase debe implementar
+#entonces en python se usa el concepto
+#de clase abstracta para simular el
+#mismo comportamiento de una Interface
+#como en otros lenguajes.
 
 from abc import ABC, abstractmethod
 
